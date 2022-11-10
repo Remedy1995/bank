@@ -1,0 +1,159 @@
+h4{
+    padding-bottom: 2px;
+    color: #7b59d0;
+    font-weight: 500;
+}
+.circle{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: auto;
+    top: 75px;
+    right: 21px;
+    height: 40px;
+    font-size: 20px;
+    color: #7b59d0;
+}
+.keep{
+    font-size: 20px;
+    color: #7b59d0;
+}
+.questions{
+    background: rgb(247 228 186 / 70%);
+    padding: 30px;
+}
+li{
+    font-weight: 500;
+    color: #7b59d0;
+    list-style-type: disclosure-closed;
+    position: relative;
+    left: 20px;
+}
+.cover{
+    border-top: 1px solid rgba(147, 148, 158, 0.4);
+}
+.cover2{
+    border-top: 1px solid rgba(147, 148, 158, 0.4);
+    position: relative;
+    bottom: 190px;
+}
+.togg{
+    padding-bottom: 2px;
+    color: #7b59d0;
+   margin-left: 200px;
+}
+.swap{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50px;
+    font-size: 40px;
+    color: #7b59d0;
+}
+.cover1{
+    border-top: 1px solid rgba(147, 148, 158, 0.4);
+    position: relative;
+    bottom: 120px;
+}
+#check{
+    position: relative;
+    bottom: 30px;
+}
+.business{
+    position: relative;
+    bottom: 40px;
+    line-height: 30px;
+    word-spacing: 1px;
+    width: fit-content;
+    word-break: break-all;
+}
+.date{
+    position: relative;
+    top: 25px;
+    font-weight: bold;
+    color: #7b59d0;
+}
+.align-self{
+padding: 10px;
+}
+
+#information{
+background: transparent;
+ border-left: 3px solid #7b59d0;
+}
+@media only screen and (max-width:600px){
+    .cover2{
+        bottom: 190px;
+    }
+    li{
+        font-weight: 700;
+    color: #7b59d0;
+    list-style-type: disclosure-closed;
+    position: relative;
+    left: 20px;
+    margin: 13px;
+    }
+#information{
+    background: transparent;
+    border-left: 3px solid #7b59d0;
+    position: relative;
+    left: 10px;
+    } 
+ .date{
+    position: relative;
+    top: 22px;
+    font-size: 16px;
+} 
+.business{
+    position: relative;
+    bottom: 40px;
+    line-height: 30px;
+    word-spacing: 1px;
+    width: fit-content;
+    word-break: break-word;
+}
+.cover1{
+    border-top: 1px solid rgba(147, 148, 158, 0.4);
+    position: relative;
+    bottom: 10px;
+}
+}
+
+@media only screen and (max-width:768px){
+
+    .cover1{
+        border-top: 1px solid rgba(147, 148, 158, 0.4);
+        position: relative;
+        bottom: 10px;
+    }
+    h4{
+        padding: 18px;
+    font-size: 20px;
+    }
+    #information{
+        background: transparent;
+        border-left: 3px solid #7b59d0;
+        position: relative;
+        left: 10px;
+        } 
+     .date{
+        position: relative;
+        top: 22px;
+        font-size: 16px;
+    } 
+    .business{
+        position: relative;
+        bottom: 40px;
+        line-height: 35px;
+        width: fit-content;
+        word-spacing: normal;
+        word-break: revert;
+    }
+    .cover2{
+        bottom: 0px;
+    }
+    .keep{
+        font-size: 14px;
+    }
+    }
