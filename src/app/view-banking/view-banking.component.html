@@ -72,8 +72,8 @@
         <div class="container py-lg-5 py-md-3">
             <div class="row">
                 <div class="col-lg-7 mb-lg-0 mb-md-5 mb-4 align-self">
-                    <h4>We're all set Richard,</h4>
-                    <h3 class="title-left mx-0">Your Money Should've arrived <span>by October 17th </span> in your bank</h3>
+                    <h4>We're all set {{clientname}},</h4>
+                    <h3 class="title-left mx-0">Your Money Should arrive in your bank soon.</h3>
     
                     <!-- <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Learn More</a> -->
                 </div>
@@ -91,21 +91,22 @@
       <div class="midd-w3 py-5" >
           <div class="container py-lg-5 py-md-3">
               <div class="row">
+                <p class="mt-md-4 mt-3" >Last updated:16 minutes ago</p>
+                <p class="mt-md-4 mt-3 transfer" >Your transfer is complete</p>
                   <div class="col-lg-7 mb-lg-0 mb-md-5 mb-4 align-self" id="information">
                       <p class="mt-md-4 mt-3">
-                       
-                        <span class="fa fa-circle circle"></span><p class="date">October 17th</p> <p class="mt-md-4 mt-3">Carlos set up your transfer</p>
-                        <span class="fa fa-circle circle"></span> <p class="date">October 17th</p>
-                          <p class="mt-md-4 mt-3">We recieved 1,000 GHS from carlos</p>
-                          <span class="fa fa-circle circle"></span> <p class="date">October 17th</p>
+                        <span class="fa fa-circle circle"></span><p class="date">{{date}}</p> <p class="mt-md-4 mt-3"><span class="client">{{sender}}</span>   set up your transfer</p>
+                        <span class="fa fa-circle circle"></span> <p class="date">{{date}}</p>
+                          <p class="mt-md-4 mt-3">We recieved <span class="client">{{amount}}</span> from <span class="client">{{sender}}</span>  </p>
+                          <span class="fa fa-circle circle"></span> <p class="date">{{date}}</p>
                             <p class="mt-md-4 mt-3">Your money's on its way</p>
-                            <span class="fa fa-circle circle"></span><p class="date">October 17th</p>
+                            <span class="fa fa-circle circle"></span><p class="date">{{date}}</p>
                             <p class="mt-md-4 mt-3" style="color:#a486f1;font-weight: bold;">Your money should've arrived in your bank</p>
                   </div>
                   <div class="col-lg-5">
                          <h5 class="title-big mb-5 text-center keep">Keep in Mind</h5>
-                         <p class="business">It can take up to 2 business days for your bank to process
-                         and credit your money to your account ending in ********7509.</p>
+                         <p class="business">It can take up to  <span class="client">  {{days}} </span>business days for your bank to process
+                         and credit your money to your account ending in  <span class="client">{{accountnumber}}</span>.</p>
                   </div>
               </div>
           </div>
@@ -127,7 +128,7 @@
                     <li>Closed due to a public holiday</li>
                  </ul>
 
-                 <p class="mt-md-4 mt-3 questions">Questions about your transfer?<br>Please ask Carlos for a transfer receipt and contact your bank</p>
+                 <p class="mt-md-4 mt-3 questions">Questions about your transfer?<br>Please ask {{sender}} for a transfer receipt and contact your bank</p>
 
                    </div>
                     </div>
@@ -148,10 +149,13 @@
                     <p class="mt-md-4 mt-3">
                         <h4 class="mt-md-4 mt-3 ">Transfer Details</h4>
                         <div *ngIf="toggleDisplay;">
-                        <p class="date">Sender</p> <p class="mt-md-4 mt-3">Carlos</p>
-                        <p class="date">Amount</p> <p class="mt-md-4 mt-3">1,000</p>
-                        <p class="date">To your account number</p> <p class="mt-md-4 mt-3">*********7509</p>
-                        <p class="date">Reference</p> <p class="mt-md-4 mt-3">Ca1233322</p>
+                        <p class="date">Sender</p> <p class="mt-md-4 mt-3">{{sender}}</p>
+                        <p class="date">Amount</p> <p class="mt-md-4 mt-3">{{amount}}</p>
+                        <p class="date">To your account number</p> <p class="mt-md-4 mt-3">{{accountnumber}}</p>
+                        <p class="date">IBAN</p> <p class="mt-md-4 mt-3">{{iban}}</p>
+                        <p class="mt-md-4 mt-3">{{transaction_type}}</p>
+                        <p class="mt-md-4 mt-3">{{post_box1}}</p>
+                        <p class="mt-md-4 mt-3">{{post_box2}}</p>
                     </div>
                     </div>
                 <div class="col-lg-5">

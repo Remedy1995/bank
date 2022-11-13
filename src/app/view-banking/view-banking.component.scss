@@ -3,6 +3,14 @@ h4{
     color: #7b59d0;
     font-weight: 500;
 }
+.client{
+    color: #7b59d0;
+    font-weight: 900;
+}
+.transfer{
+    color: #7b59d0;
+    font-weight: 900;
+}
 .circle{
     display: flex;
     justify-content: flex-start;
@@ -86,6 +94,10 @@ background: transparent;
     .cover2{
         bottom: 190px;
     }
+    h4{
+        padding:50px;
+    font-size: 20px;
+    }
     li{
         font-weight: 700;
     color: #7b59d0;
@@ -98,7 +110,7 @@ background: transparent;
     background: transparent;
     border-left: 3px solid #7b59d0;
     position: relative;
-    left: 10px;
+    left: 20px;
     } 
  .date{
     position: relative;
@@ -128,14 +140,14 @@ background: transparent;
         bottom: 10px;
     }
     h4{
-        padding: 18px;
+        padding:50px;
     font-size: 20px;
     }
     #information{
         background: transparent;
         border-left: 3px solid #7b59d0;
         position: relative;
-        left: 10px;
+        left: 20px;
         } 
      .date{
         position: relative;
