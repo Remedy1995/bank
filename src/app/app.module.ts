@@ -6,12 +6,16 @@ import { HomeComponent } from './home/home.component';
 import { ViewBankingComponent } from './view-banking/view-banking.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { FooterComponent } from './partials/footer/footer.component';
+import { HeaderComponent } from './partials/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
    HomeComponent,
-   ViewBankingComponent
+   ViewBankingComponent,
+   FooterComponent,
+   HeaderComponent
   ],
   imports: [
     BrowserModule,
