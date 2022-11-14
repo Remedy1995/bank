@@ -1,8 +1,8 @@
 export const Data=[
 {
-clientname:'Randall C',
+clientname:'RANDALL C CLARKE-IANIERO',
 amount:941200000,
-days:5,
+days:3,
 sender:'BHP',
 accountnumber:1234567894266,
 date:'14th November',

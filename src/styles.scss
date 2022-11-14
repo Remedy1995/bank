@@ -2,3 +2,17 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media only screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+}
+
+
+@media only screen and (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+
+}
