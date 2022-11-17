@@ -9,4 +9,6 @@ iban:number,
 transaction_type:String,
 post_box1:String,
 post_box2:String,
+updated_at:String,
+current_date:String
 }
