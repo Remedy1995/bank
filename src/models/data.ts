@@ -11,6 +11,6 @@ transaction_type:'ALASKA USA FEDERAL CREDIT UNION',
 post_box1:'PO BOX 196613',
 post_box2:'ANCHORAGE AK 99519-6613,USA',
 updated_at:'Thu Nov 17 2022 01:39:12 GMT-0800 (Pacific Standard Time)',
-current_date:'17th November'
+current_date:'16th November'
 }
 ]
