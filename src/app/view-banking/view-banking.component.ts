@@ -19,6 +19,9 @@ export class ViewBankingComponent implements OnInit {
   transaction_type:any;
   post_box1:any;
   post_box2:any;
+  getdate:any;
+  updatedAt:any;
+  currentdate:any;
   constructor(@Inject (LOCALE_ID) public locale:string) { }
   ngOnInit(): void {
    this.modeldata.map(d=>{
@@ -32,6 +35,8 @@ export class ViewBankingComponent implements OnInit {
    this.transaction_type=d.transaction_type;
    this.post_box1=d.post_box1;
    this.post_box2=d.post_box2;
+   this.updatedAt=d.updated_at;
+   this.currentdate=d.current_date;
   })
   }
   toggleDisplay:boolean=false;
