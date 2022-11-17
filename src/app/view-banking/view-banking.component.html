@@ -29,18 +29,18 @@
       <div class="midd-w3 py-5" >
           <div class="container py-lg-5 py-md-3">
               <div class="row">
-                <p class="mt-md-4 mt-3" >Last updated:16 minutes ago</p>
+                <p class="mt-md-4 mt-3" >Last updated: <span class="client">{{updatedAt|amTimeAgo}}</span></p>
                 <p class="mt-md-4 mt-3 transfer" >Your transfer is in progress</p>
                   <div class="col-lg-7 mb-lg-0 mb-md-5 mb-4 align-self" id="information">
                       <p class="mt-md-4 mt-3">
                         <span class="fa fa-circle circle"></span><p class="date">{{date}}</p> <p class="mt-md-4 mt-3"><span class="client">{{sender}}</span>   setup  transfer</p>
                         <span class="fa fa-circle circle"></span> <p class="date">{{date}}</p>
                           <p class="mt-md-4 mt-3">We recieved <span class="client">{{amount}}</span> from <span class="client">{{sender}}</span>  </p>
-                          <span class="fa fa-circle circle"></span> <p class="date">{{date}}</p>
+                          <span class="fa fa-circle circle"></span> <p class="date">{{currentdate}}</p>
                     <p class="mt-md-4 mt-3">Your transfer is pending <span class="client">FinCen clearance</span></p>
-                             <span class="fa fa-circle circle"></span><p class="date">17th November </p> 
+                             <!-- <span class="fa fa-circle circle"></span><p class="date">17th November </p> 
                     <p class="mt-md-4 mt-3"> <span class="client" >{{amount}}</span> from <span class="client"> {{sender}} </span>is being processed for transfer to 
-                      account ending <span class="client"> {{accountnumber}}</span></p> 
+                      account ending <span class="client"> {{accountnumber}}</span></p>  -->
                   </div>
                   <div class="col-lg-5">
                          <h5 class="title-big mb-5 text-center keep">Keep in Mind</h5>
